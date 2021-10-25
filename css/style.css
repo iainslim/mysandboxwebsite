@@ -1,0 +1,206 @@
+body{
+    /*
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    */
+    font: 15px/1.5 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;     /*replaces the above lines*/
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;   
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: #e8491d;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #f4f4f4;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #f4f4f4;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header w/ horizontal menu*/
+header{
+    background:#35424a;
+    color: #f4f4f4;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom:#e8491d 3px solid;
+}
+
+header a{
+    color: #f4f4f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px; /* Adds padding on right and left (order = top, right, bottom, left)*/
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 30 px;
+}
+
+header .highlight, header .current a{
+    color:#e8491d;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: #cccccc;
+}
+
+/* Showcase */
+
+#showcase{
+    min-height: 400px;
+    text-align: center;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55 px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+#random_form{
+    padding: 15px;
+    color: #f4f4f4;
+    background: #35424a;
+}
+
+/* Random Form */
+
+#random_form h1{
+    float: left;
+}
+
+#random_form form{
+    float: right;
+    margin-top: 25px;
+}
+
+#random_form input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes */
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 15px;
+}
+
+/* Sidebar */
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* Main-col*/
+
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/* Miscellaneous */
+
+ul#miscthings li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+}
+
+/* Footer */
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #f4f4f4;
+    background-color: #e8491d;
+    text-align: center;
+}
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    #random_form h1,
+    #random_form form,
+    #boxes .box,
+    article#main-col,
+    aside#sidebar{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #random_form button{
+        display: block;
+        width: 100%;
+    }
+
+    #random_form form input[type="email"]{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
